@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Status App</title>
+    <link rel="stylesheet" href="css/battery_status.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Battery Status</h1>
+        <div class="battery-info">
+            <div class="battery-level">
+                <label for="battery-bar">Battery Level:</label>
+                <progress id="battery-bar" max="100" value="0"></progress>
+                <span id="battery-percentage">0%</span>
+            </div>
+            <div class="charging-status">
+                <p id="charging-status-text">Not Charging</p>
+            </div>
+        </div>
+        <button id="refresh-button">Refresh</button>
+    </div>
+
+    <script src="js/battery_status.js"></script>
+</body>
+</html>
